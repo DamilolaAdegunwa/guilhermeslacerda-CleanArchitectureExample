@@ -3,7 +3,10 @@
   <groupId>CleanArchitectureExample</groupId>
   <artifactId>CleanArchitectureExample</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
+  <properties>
+        <java.version>21</java.version>
+        <exec.mainClass>main.Bootstrapper</exec.mainClass>
+    </properties>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <testSourceDirectory>tests</testSourceDirectory>
@@ -19,7 +22,7 @@
 		<plugin>
 			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-surefire-plugin</artifactId>
-			<version>2.19.1</version>
+			<version>3.2.2</version>
 			<configuration>
 			<parallel>methods</parallel>
 			<useUnlimitedThreads>true</useUnlimitedThreads>
@@ -28,12 +31,12 @@
 		<plugin>
 	        <groupId>org.apache.maven.plugins</groupId>
 	        <artifactId>maven-pmd-plugin</artifactId>
-	        <version>3.12.0</version>
+	        <version>3.21.2</version>
       	</plugin>
 	<plugin>
 		<groupId>org.jacoco</groupId>
 		<artifactId>jacoco-maven-plugin</artifactId>
-		<version>0.8.2</version>
+		<version>0.8.11</version>
 		<executions>
 			<execution>
 				<goals>
@@ -73,13 +76,13 @@
   	<dependency>
   		<groupId>junit</groupId>
   		<artifactId>junit</artifactId>
-  		<version>4.13-beta-2</version>
+  		<version>4.13.2</version>
   		<scope>test</scope>
   	</dependency>
   	<dependency>
 	    <groupId>org.jacoco</groupId>
 	    <artifactId>jacoco-maven-plugin</artifactId>
-    	<version>0.8.4</version>
+    	<version>0.8.11</version>
 	</dependency>
   </dependencies>
   
